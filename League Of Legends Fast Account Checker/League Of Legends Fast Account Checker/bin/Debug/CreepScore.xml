@@ -1,0 +1,2937 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CreepScore</name>
+    </assembly>
+    <members>
+        <member name="F:CreepScoreAPI.BannedChampionAdvanced.championId">
+            <summary>
+            Banned champion ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.BannedChampionAdvanced.pickTurn">
+            <summary>
+            Turn during which the champion was banned
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.BannedChampionAdvanced.teamId">
+            <summary>
+            ID of the team that banned the champion
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.ascendedType">
+            <summary>
+            The ascended type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.assistingParticipantIds">
+            <summary>
+            The assisting participant IDs of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.buildingType">
+            <summary>
+            The building type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.creatorId">
+            <summary>
+            The creator ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.eventType">
+            <summary>
+            Event type.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.itemAfter">
+            <summary>
+            The ending item ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.itemBefore">
+            <summary>
+            The starting item ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.itemId">
+            <summary>
+            The item ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.killerId">
+            <summary>
+            The killer ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.laneType">
+            <summary>
+            The lane type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.levelUpType">
+            <summary>
+            The level up type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.monsterType">
+            <summary>
+            The monster type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.participantId">
+            <summary>
+            The participant ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.pointCaptured">
+            <summary>
+            The point captured in the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.position">
+            <summary>
+            The position of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.skillSlot">
+            <summary>
+            The skill slot of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.teamId">
+            <summary>
+            The team ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.timestamp">
+            <summary>
+            Represents how long into the match the event occurred.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.towerType">
+            <summary>
+            The tower type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.victimId">
+            <summary>
+            The victim ID of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.EventAdvanced.wardType">
+            <summary>
+            The ward type of the event. Only present if relevant.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.FrameAdvanced.events">
+            <summary>
+            List of events for this frame
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.FrameAdvanced.participantFrames">
+            <summary>
+            Map of each participant ID to the participant's information for the frame
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.FrameAdvanced.timestamp">
+            <summary>
+            Represents how long into the match the frame occurred
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.mapId">
+            <summary>
+            Match map ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.matchCreation">
+            <summary>
+            Match creation time
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.matchDuration">
+            <summary>
+            Match duration
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.matchId">
+            <summary>
+            ID of the match
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.matchMode">
+            <summary>
+            Match mode
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.matchType">
+            <summary>
+            Match type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.matchVersion">
+            <summary>
+            Match version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.participantIdentities">
+            <summary>
+            Participant identity information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.participants">
+            <summary>
+            Participant information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.queueType">
+            <summary>
+            Match queue type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.region">
+            <summary>
+            Region where the match was played
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.season">
+            <summary>
+            Season match was played
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.teams">
+            <summary>
+            Team information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchDetailAdvanced.timeline">
+            <summary>
+            Match timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.mapId">
+            <summary>
+            Match map ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.matchCreation">
+            <summary>
+            Match creation time
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.matchDuration">
+            <summary>
+            Match duration
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.matchId">
+            <summary>
+            ID of the match
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.matchMode">
+            <summary>
+            Match mode
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.matchType">
+            <summary>
+            Match type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.matchVersion">
+            <summary>
+            Match version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.participantIdentities">
+            <summary>
+            Participant identity information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.participants">
+            <summary>
+            Participant information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.queueType">
+            <summary>
+            Match queue type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.region">
+            <summary>
+            Region where the match was played
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchSummaryAdvanced.season">
+            <summary>
+            Season match was played
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchTimelineAdvanced.frameInterval">
+            <summary>
+            Time between each returned frame in milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchTimelineAdvanced.frames">
+            <summary>
+            List of timeline frames for the match
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.championId">
+            <summary>
+            Champion ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.highestAchievedSeasonTierString">
+            <summary>
+            Highest ranked tier achieved for the previous season, if any, otherwise null. As a string.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.highestAchievedSeasonTier">
+            <summary>
+            Highest ranked tier achieved for the previous season, if any, otherwise null.
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.masteries">
+            <summary>
+            List of mastery information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.participantId">
+            <summary>
+            Participant ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.runes">
+            <summary>
+            List of rune information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.spell1Id">
+            <summary>
+            First summoner spell ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.spell2Id">
+            <summary>
+            Second summoner spell ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.stats">
+            <summary>
+            Participant statistics
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.teamId">
+            <summary>
+            Team ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantAdvanced.timeline">
+            <summary>
+            Timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.currentGold">
+            <summary>
+            Participant's current gold
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.jungleMinionsKilled">
+            <summary>
+            Number of jungle minions killed by participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.level">
+            <summary>
+            Participant's current level
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.minionsKilled">
+            <summary>
+            Number of minions killed by participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.participantId">
+            <summary>
+            Participant ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.position">
+            <summary>
+            Participant's position
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.totalGold">
+            <summary>
+            Participant's total gold since match start
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantFrameAdvanced.xp">
+            <summary>
+            Experience earned by participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantIdentityAdvanced.participantId">
+            <summary>
+            Participant ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantIdentityAdvanced.player">
+            <summary>
+            Player information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.assists">
+            <summary>
+            Number of assists
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.champLevel">
+            <summary>
+            Champion level achieved
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.combatPlayerScore">
+            <summary>
+            If game was a dominion game, player's combat score, otherwise 0
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.deaths">
+            <summary>
+            Number of deaths
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.doubleKills">
+            <summary>
+            Number of double kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.firstBloodAssist">
+            <summary>
+            Flag indicating if participant got an assist on first blood
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.firstBloodKill">
+            <summary>
+            Flag indicating if participant got first blood
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.firstInhibitorAssist">
+            <summary>
+            Flag indicating if participant got an assist on the first inhibitor
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.firstInhibitorKill">
+            <summary>
+            Flag indicating if participant destroyed the first inhibitor
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.firstTowerAssist">
+            <summary>
+            Flag indicating if participant got an assist on the first tower
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.firstTowerKill">
+            <summary>
+            Flag indicating if participant destroyed the first tower
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.goldEarned">
+            <summary>
+            Gold earned
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.goldSpent">
+            <summary>
+            Gold spent
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.inhibitorKills">
+            <summary>
+            Number of inhibitor kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item0">
+            <summary>
+            First item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item1">
+            <summary>
+            Second item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item2">
+            <summary>
+            Third item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item3">
+            <summary>
+            Fourth item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item4">
+            <summary>
+            Fifth item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item5">
+            <summary>
+            Sixth item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.item6">
+            <summary>
+            Seventh item ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.killingSprees">
+            <summary>
+            Number of killing sprees
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.kills">
+            <summary>
+            Number of kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.largestCriticalStrike">
+            <summary>
+            Largest critical strike
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.largestKillingSpree">
+            <summary>
+            Largest killing spree
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.largestMultiKill">
+            <summary>
+            Largest multi kill
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.magicDamageDealt">
+            <summary>
+            Magical damage dealt
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.magicDamageDealtToChampions">
+            <summary>
+            Magical damage dealt to champions
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.magicDamageTaken">
+            <summary>
+            Magic damage taken
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.minionsKilled">
+            <summary>
+            Minions killed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.neutralMinionsKilled">
+            <summary>
+            Neutral minions killed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.neutralMinionsKilledEnemyJungle">
+            <summary>
+            Neutral jungle minions killed in the enemy team's jungle
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.neutralMinionsKilledTeamJungle">
+            <summary>
+            Neutral jungle minions killed in your team's jungle
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.nodeCapture">
+            <summary>
+            If game was a dominion game, number of node captures
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.nodeCaptureAssist">
+            <summary>
+            If game was a dominion game, number of node capture assists
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.nodeNeutralize">
+            <summary>
+            If game was a dominion game, number of node neutralizations
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.nodeNeutralizeAssist">
+            <summary>
+            If game was a dominion game, number of node neutralization assists
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.objectivePlayerScore">
+            <summary>
+            If game was a dominion game, player's objectives score, otherwise 0
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.pentaKills">
+            <summary>
+            Number of penta kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.physicalDamageDealt">
+            <summary>
+            Physical damage dealt
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.physicalDamageDealtToChampions">
+            <summary>
+            Physical damage dealt to champions
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.physicalDamageTaken">
+            <summary>
+            Physical damage taken
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.quadraKills">
+            <summary>
+            Number of quadra kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.sightWardsBoughtInGame">
+            <summary>
+            Sight wards purchased
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.teamObjective">
+            <summary>
+            If game was a dominion game, number of completed team objectives (i.e., quests)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalDamageDealt">
+            <summary>
+            Total damage dealt
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalDamageDealtToChampions">
+            <summary>
+            Total damage dealt to champions
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalDamageTaken">
+            <summary>
+            Total damage taken
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalHeal">
+            <summary>
+            Total heal amount
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalPlayerScore">
+            <summary>
+            If game was a dominion game, player's total score, otherwise 0
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalScoreRank">
+            <summary>
+            If game was a dominion game, team rank of the player's total score (e.g., 1-5)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalTimeCrowdControlDealt">
+            <summary>
+            Total dealt crowd control time
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.totalUnitsHealed">
+            <summary>
+            Total units healed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.towerKills">
+            <summary>
+            Number of tower kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.tripleKills">
+            <summary>
+            Number of triple kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.trueDamageDealt">
+            <summary>
+            True damage dealt
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.trueDamageDealtToChampions">
+            <summary>
+            True damage dealt to champions
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.trueDamageTaken">
+            <summary>
+            True damage taken
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.unrealKills">
+            <summary>
+            Number of unreal kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.visionWardsBoughtInGame">
+            <summary>
+            Vision wards purchased
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.wardsKilled">
+            <summary>
+            Number of wards killed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.wardsPlaced">
+            <summary>
+            Number of wards placed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantStatsAdvanced.winner">
+            <summary>
+            Flag indicating whether or not the participant won
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.ancientGolemAssistsPerMinCounts">
+            <summary>
+            Ancient golem assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.ancientGolemKillsPerMinCounts">
+            <summary>
+            Ancient golem kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.assistedLaneDeathsPerMinDeltas">
+            <summary>
+            Assisted lane deaths per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.assistedLaneKillsPerMinDeltas">
+            <summary>
+            Assisted lane kills per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.baronAssistsPerMinCounts">
+            <summary>
+            Baron assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.baronKillsPerMinCounts">
+            <summary>
+            Baron kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.creepsPerMinDeltas">
+            <summary>
+            Creeps per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.csDiffPerMinDeltas">
+            <summary>
+            Creep score difference per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.damageTakenDiffPerMinDeltas">
+            <summary>
+            Damage taken difference per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.damageTakenPerMinDeltas">
+            <summary>
+            Damage taken per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.dragonAssistsPerMinCounts">
+            <summary>
+            Dragon assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.dragonKillsPerMinCounts">
+            <summary>
+            Dragon kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.elderLizardAssistsPerMinCounts">
+            <summary>
+            Elder lizard assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.elderLizardKillsPerMinCounts">
+            <summary>
+            Elder lizard kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.goldPerMinDeltas">
+            <summary>
+            Gold per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.inhibitorAssistsPerMinCounts">
+            <summary>
+            Inhibitor assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.inhibitorKillsPerMinCounts">
+            <summary>
+            Inhibitor kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.lane">
+            <summary>
+            Participant's lane
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.role">
+            <summary>
+            Participant's role
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.towerAssistsPerMinCounts">
+            <summary>
+            Tower assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.towerKillsPerMinCounts">
+            <summary>
+            Tower kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.towerKillsPerMinDeltas">
+            <summary>
+            Tower kills per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.vilemawAssistsPerMinCounts">
+            <summary>
+            Vilemaw assists per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.vilemawKillsPerMinCounts">
+            <summary>
+            Vilemaw kills per minute timeline counts
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.wardsPerMinDeltas">
+            <summary>
+            Wards placed per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.xpDiffPerMinDeltas">
+            <summary>
+            Experience difference per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineAdvanced.xpPerMinDeltas">
+            <summary>
+            Experience per minute timeline data
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineDataAdvanced.tenToTwenty">
+            <summary>
+            Value per minute from 10 min to 20 min
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineDataAdvanced.thirtyToEnd">
+            <summary>
+            Value per minute from 30 min to the end of the game
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineDataAdvanced.twentyToThirty">
+            <summary>
+            Value per minute from 20 min to 30 min
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantTimelineDataAdvanced.zeroToTen">
+            <summary>
+            Value per minute from the beginning of the game to 10 min
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerAdvanced.matchHistoryUri">
+            <summary>
+            Match history URI
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerAdvanced.profileIcon">
+            <summary>
+            Profile icon ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerAdvanced.summonerId">
+            <summary>
+            Summoner ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerAdvanced.summonerName">
+            <summary>
+            Summoner name
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerHistoryAdvanced.matches">
+            <summary>
+            List of matches for the player
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.bans">
+            <summary>
+            If game was draft mode, contains banned champion data, otherwise null
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.baronKills">
+            <summary>
+            Number of times the team killed baron
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.dominionVictoryScore">
+            <summary>
+            If game was a dominion game, specifies the points the team had at game end, otherwise null
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.dragonKills">
+            <summary>
+            Number of times the team killed dragon
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.firstBaron">
+            <summary>
+            Flag indicating whether or not the team got the first baron kill
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.firstBlood">
+            <summary>
+            Flag indicating whether or not the team got first blood
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.firstDragon">
+            <summary>
+            Flag indicating whether or not the team got the first dragon kill
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.firstInhibitor">
+            <summary>
+            Flag indicating whether or not the team destroyed the first inhibitor
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.firstTower">
+            <summary>
+            Flag indicating whether or not the team destroyed the first tower
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.inhibitorKills">
+            <summary>
+            Number of inhibitors the team destroyed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.teamId">
+            <summary>
+            Team ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.towerKills">
+            <summary>
+            Number of towers the team destroyed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.vilemawKills">
+            <summary>
+            Number of times the team killed vilemaw
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamAdvanced.winner">
+            <summary>
+            Flag indicating whether or not the team won
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.AggregatedStats">
+            <summary>
+            AggregatedStats class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageAssists">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageChampionsKilled">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageCombatPlayerScore">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageNodeCapture">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageNodeCaptureAssist">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageNodeNeutralize">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageNodeNeutralizeAssist">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageNumDeaths">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageObjectivePlayerScore">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageTeamObjective">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.averageTotalPlayerScore">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxAssists">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxCombatPlayerScore">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxNodeCapture">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxNodeCaptureAssist">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxNodeNeutralize">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxNodeNeutralizeAssist">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxNumDeaths">
+            <summary>
+            Only returned for ranked stats
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxObjectivePlayerScore">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxTeamObjective">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.maxTotalPlayerScore">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.totalDeathsPerSession">
+            <summary>
+            Only returned for ranked stats
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.totalNodeCapture">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.AggregatedStats.totalNodeNeutralize">
+            <summary>
+            Dominion only
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Champion">
+            <summary>
+            Champion class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Champion.active">
+            <summary>
+            Indicates if the champion is active
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Champion.botEnabled">
+            <summary>
+            Bot enabled flag (for custom games)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Champion.botMmEnabled">
+            <summary>
+            Bot Match Made enabled flag (for CoOp vs AI games)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Champion.freeToPlay">
+            <summary>
+            Indicates if the champion is free to play
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Champion.id">
+            <summary>
+            Champion ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Champion.rankedPlayEnabled">
+            <summary>
+            Ranked play enabled flag
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Champion.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int64,System.Boolean)">
+            <summary>
+            Champion Constructor
+            </summary>
+            <param name="active">Indicates if the champion is active</param>
+            <param name="botEnabled">Bot enabled flag (for custom games)</param>
+            <param name="botMmEnabled">Bot Match Made enabled flag (for CoOp vs AI games)</param>
+            <param name="freeToPlay">Indicates if the champion is free to play</param>
+            <param name="id">Champion ID</param>
+            <param name="rankedPlayEnabled">Ranked play enabled flag</param>
+        </member>
+        <member name="T:CreepScoreAPI.ChampionStats">
+            <summary>
+            ChampionStats class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ChampionStats.id">
+            <summary>
+            Champion ID
+            </summary>
+            <remarks>0 represents the combined stats for all champions</remarks>
+        </member>
+        <member name="F:CreepScoreAPI.ChampionStats.stats">
+            <summary>
+            List of stats associated with the champion
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.ChampionStats.#ctor(System.Int32,Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            ChampionStats constructor
+            </summary>
+            <param name="id">Champion ID</param>
+            <param name="name">Champion name</param>
+            <param name="statsO">JArray of stats associated with the champion</param>
+        </member>
+        <member name="M:CreepScoreAPI.ChampionStats.LoadStats(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Loads champion stats
+            </summary>
+            <param name="a">json list of champion stats</param>
+        </member>
+        <member name="T:CreepScoreAPI.Game">
+            <summary>
+            Game class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.championId">
+            <summary>
+            Champion ID associated with game
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.createDateLong">
+            <summary>
+            Date that end game data was recorded, specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.createDate">
+            <summary>
+            Date that end game data was recorded
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.fellowPlayers">
+            <summary>
+            List of other players associated with the game
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.gameId">
+            <summary>
+            Game ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.gameModeString">
+            <summary>
+            Game mode as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.gameMode">
+            <summary>
+            Game mode
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.gameTypeString">
+            <summary>
+            Game type as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.gameType">
+            <summary>
+            Game type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.invalid">
+            <summary>
+            Invalid flag
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.ipEarned">
+            <summary>
+            IP earned
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.level">
+            <summary>
+            Level
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.mapId">
+            <summary>
+            Map ID as number
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.map">
+            <summary>
+            Map
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.spell1Id">
+            <summary>
+            ID of first summoner spell
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.spell1">
+            <summary>
+            First summoner spell
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.spell2Id">
+            <summary>
+            ID of second summoner spell
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.spell2">
+            <summary>
+            Second summoner spell
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.stats">
+            <summary>
+            List of statistics associated with the game for this summoner
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.subTypeString">
+            <summary>
+            Game sub-type string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.subType">
+            <summary>
+            Game sub-type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.teamIdInt">
+            <summary>
+            Team ID associated with game
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Game.teamId">
+            <summary>
+            Team ID associated with game
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Game.#ctor(System.Int32,System.Int64,Newtonsoft.Json.Linq.JArray,System.Int64,System.String,System.String,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Newtonsoft.Json.Linq.JObject,System.String,System.Int32)">
+            <summary>
+            Game constructor
+            </summary>
+            <param name="championId">Champion ID associated with game</param>
+            <param name="createDateLong">Date that end game data was recorded, specified as epoch milliseconds</param>
+            <param name="fellowPlayersA">JArray of other players associated with the game</param>
+            <param name="gameId">Game ID</param>
+            <param name="gameModeString">Game mode as a string</param>
+            <param name="gameTypeString">Game type as a string</param>
+            <param name="invalid">Invalid flag</param>
+            <param name="level">Level</param>
+            <param name="ipEarned">IP earned</param>
+            <param name="mapId">Map ID number</param>
+            <param name="spell1Id">ID of first summoner spell</param>
+            <param name="spell2Id">ID of second summoner spell</param>
+            <param name="statisticsO">JArray of statistics associated with the game for this summoner</param>
+            <param name="subTypeString">Game sub-type</param>
+            <param name="teamId">Team ID associated with game</param>
+        </member>
+        <member name="M:CreepScoreAPI.Game.LoadFellowPlayers(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Loads the fellowPlayers list
+            </summary>
+            <param name="a">The json list of fellow players</param>
+        </member>
+        <member name="M:CreepScoreAPI.Game.LoadStatistics(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Loads the statistics list
+            </summary>
+            <param name="a">The json list of statistics</param>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants">
+            <summary>
+            GameConstants class
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetGameMode(System.String)">
+            <summary>
+            Turns a gameMode string into a GameMode enum
+            </summary>
+            <param name="gameModeStr">GameMode string</param>
+            <returns>GameMode enum</returns>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetMap(System.Int32)">
+            <summary>
+            Tuns a mapID int into a Map enum
+            </summary>
+            <param name="mapInt">MapId int</param>
+            <returns>Map enum</returns>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetQueue(System.String)">
+            <summary>
+            Set the Queue field
+            </summary>
+            <param name="queueStr">The queue type as a string</param>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetTier(System.String)">
+            <summary>
+            Set the Tier field
+            </summary>
+            <param name="tierStr">The tier type as a string</param>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetGameType(System.String)">
+            <summary>
+            Sets the gameType enum
+            </summary>
+            <param name="gameTypeStr">The game type as a string</param>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetPlayerStatSummaryType(System.String)">
+            <summary>
+            Set PlayerStatSummaryType
+            </summary>
+            <param name="playerStatSummaryTypeStr">Player stat summary type as a string</param>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetMatchMakingQueue(System.Int32)">
+            <summary>
+            Set MatchMakingQueues type
+            </summary>
+            <param name="queueId">Queue ID</param>
+            <returns>The match making queue type</returns>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetSpellType(System.Int32)">
+            <summary>
+            Set the summoner spell type
+            </summary>
+            <param name="spell">The spell ID</param>
+            <returns>A spell type</returns>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.GameConstants.SetSubType(System.String)">
+            <summary>
+            Set subType type
+            </summary>
+            <param name="subType">subType string</param>
+            <returns>subType type</returns>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.Map">
+            <summary>
+            Map types
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.GameMode">
+            <summary>
+            Game mode types
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.Queue">
+            <summary>
+            Queue types
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.Tier">
+            <summary>
+            Tier types
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.GameType">
+            <summary>
+            Game type
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.PlayerStatSummaryType">
+            <summary>
+            Player stats summary type list
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.MatchMakingQueues">
+            <summary>
+            Match making queue types
+            </summary>
+            <remarks>The queueId field</remarks>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.Spell">
+            <summary>
+            Spell types
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.SubType">
+            <summary>
+            Game subType
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.GameConstants.TeamID">
+            <summary>
+            Team ID associated with a game
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.League">
+            <summary>
+            League class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.entries">
+            <summary>
+            List of LeagueItem entries
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.name">
+            <summary>
+            Name of league
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.participantId">
+            <summary>
+            ID of summoner as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.queueString">
+            <summary>
+            Queue type as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.queue">
+            <summary>
+            Queue type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.tierString">
+            <summary>
+            Tier type as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.League.tier">
+            <summary>
+            Tier type
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.League.#ctor(Newtonsoft.Json.Linq.JArray,System.String,System.String,System.String,System.String)">
+            <summary>
+            League constructor
+            </summary>
+            <param name="entriesA">JArray of LeagueItem entries</param>
+            <param name="name">Name of league</param>
+            <param name="queueString">Queue type as a string</param>
+            <param name="tierString">Tier type as a string</param>
+        </member>
+        <member name="M:CreepScoreAPI.League.LoadEntries(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Load the Entries list
+            </summary>
+            <param name="a">The json list of entries</param>
+        </member>
+        <member name="T:CreepScoreAPI.LeagueEntry">
+            <summary>
+            LeagueItem class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.division">
+            <summary>
+            The league division of the player
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.isFreshBlood">
+            <summary>
+            Is fresh blood?
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.isHotStreak">
+            <summary>
+            Is hot streak?
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.isInactive">
+            <summary>
+            Is inactive?
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.isVeteran">
+            <summary>
+            Is veteran?
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.leaguePoints">
+            <summary>
+            Number of league points
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.miniSeries">
+            <summary>
+            If not null the player/team is in a mini series
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.playerOrTeamId">
+            <summary>
+            Player or team ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.playerOrTeamName">
+            <summary>
+            Player or team name
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.LeagueEntry.wins">
+            <summary>
+            Number of wins
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.LeagueEntry.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,Newtonsoft.Json.Linq.JObject,System.String,System.String,System.Int32)">
+            <summary>
+            League Item constructor
+            </summary>
+            <param name="division">Division</param>
+            <param name="isFreshBlood">Is fresh blood?</param>
+            <param name="isHotStreak">Is hot streak?</param>
+            <param name="isInactive">Is inactive?</param>
+            <param name="isVeteran">Is veteran?</param>
+            <param name="leaguePoints">Number of league points</param>
+            <param name="miniSeriesO">JObject representing the miniseries</param>
+            <param name="playerOrTeamId">Player or team ID</param>
+            <param name="playerOrTeamName">Player or team name</param>
+            <param name="wins">Number of wins</param>
+        </member>
+        <member name="M:CreepScoreAPI.LeagueEntry.LoadMiniSeries(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Load MiniSeries if the player is in one
+            </summary>
+            <param name="o">The json object representing the miniseries</param>
+            <remarks>If the player is not in a miniseries o will be null</remarks>
+        </member>
+        <member name="T:CreepScoreAPI.CreepScore">
+            <summary>
+            CreepScore class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CreepScore.apiKey">
+            <summary>
+            API key
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CreepScore.requestsPerSecond">
+            <summary>
+            How many requests your app can make every 10 seconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CreepScore.requestsPerMinute">
+            <summary>
+            How many requests your app can make every 10 minutes
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.CreepScore.#ctor(System.String)">
+            <summary>
+            CreepScore constructor, auto sets requests per 10 seconds to 10 and requests per 10 minutes to 500
+            </summary>
+            <param name="key">Your API key</param>
+        </member>
+        <member name="M:CreepScoreAPI.CreepScore.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            CreepScore constructor
+            </summary>
+            <param name="key">Your API key</param>
+            <param name="requestsPer10Seconds">Number of requests per 10 seconds</param>
+            <param name="requestsPer10Minutes">Number of requests per 10 minutes</param>
+        </member>
+        <member name="M:CreepScoreAPI.CreepScore.GetWebData(System.Uri)">
+            <summary>
+            Gets a json string from the given url
+            </summary>
+            <param name="uri">The url to fetch data from</param>
+            <returns>The json string from the API</returns>
+            <remarks>If the status code isn't 200 it will return a string
+            that is the status code.</remarks>
+        </member>
+        <member name="M:CreepScoreAPI.CreepScore.EpochToDateTime(System.Int64)">
+            <summary>
+            Converts a epoch date time to a C# DateTime
+            </summary>
+            <param name="date">Date as a epoch time</param>
+            <returns>A C# DateTime</returns>
+        </member>
+        <member name="T:CreepScoreAPI.CreepScore.Region">
+            <summary>
+            Region types
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.CreepScore.Season">
+            <summary>
+            Season enum. Used to get stats for a specific season
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.CurrentGameInfoLive">
+            <summary>
+            CurrentGameInfo class for live games
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.bannedChampions">
+            <summary>
+            Banned champion information
+            </summary>
+            <remarks>Class is the same as the BannedChampionAdvanced class
+            in the Advanced Match History folder</remarks>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameId">
+            <summary>
+            The ID of the game
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameLengthLong">
+            <summary>
+            The amount of time in seconds that has passed since the game started
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameLength">
+            <summary>
+            The amount of time that has passed since the game started
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameModeString">
+            <summary>
+            The game mode as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameMode">
+            <summary>
+            The game mode
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameQueueConfigIdLong">
+            <summary>
+            The queue type as a long
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameQueueConfigId">
+            <summary>
+            The queue type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameStartTimeLong">
+            <summary>
+            The game start time represented in epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameStartTime">
+            <summary>
+            The game start time
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameTypeString">
+            <summary>
+            The game type as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.gameType">
+            <summary>
+            The game type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.mapIdLong">
+            <summary>
+            The ID of the map as a long
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.mapId">
+            <summary>
+            The ID of the map
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.observers">
+            <summary>
+            The observer information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.participants">
+            <summary>
+            The participant information
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.CurrentGameInfoLive.platformId">
+            <summary>
+            The ID of the platform on which the game is being played
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.CurrentGameInfoLive.#ctor(Newtonsoft.Json.Linq.JArray,System.Int64,System.Int64,System.String,System.Int64,System.Int64,System.String,System.Int64,Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JArray,System.String)">
+            <summary>
+            CurrentGameInfo constructor
+            </summary>
+            <param name="bannedChampionsA"></param>
+            <param name="gameId"></param>
+            <param name="gameLength"></param>
+            <param name="gameMode"></param>
+            <param name="gameQueueConfigId"></param>
+            <param name="gameStartTime"></param>
+            <param name="gameType"></param>
+            <param name="mapId"></param>
+            <param name="observersO"></param>
+            <param name="participantsA"></param>
+            <param name="platformId"></param>
+        </member>
+        <member name="T:CreepScoreAPI.FeaturedGamesLive">
+            <summary>
+            FeaturedGame class for live games
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.FeaturedGamesLive.clientRefreshInterval">
+            <summary>
+            The suggested interval to wait before requesting FeaturedGames again
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.FeaturedGamesLive.gameList">
+            <summary>
+            The list of featured games
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.FeaturedGamesLive.#ctor(System.Int64,Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            FeaturedGames constructor
+            </summary>
+            <param name="clientRefreshInterval"></param>
+            <param name="gameListA"></param>
+        </member>
+        <member name="T:CreepScoreAPI.MasteryLive">
+            <summary>
+            Mastery class for live games
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryLive.masteryId">
+            <summary>
+            The ID of the mastery
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryLive.rank">
+            <summary>
+            The number of points put into this mastery by the user
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.MasteryLive.#ctor(System.Int64,System.Int32)">
+            <summary>
+            Mastery constructor
+            </summary>
+            <param name="masteryId"></param>
+            <param name="rank"></param>
+        </member>
+        <member name="T:CreepScoreAPI.ObserverLive">
+            <summary>
+            Observer class for live games
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ObserverLive.encryptionKey">
+            <summary>
+            Key used to decrypt the spectator grid game data for playback
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.ObserverLive.#ctor(System.String)">
+            <summary>
+            Observer constructor
+            </summary>
+            <param name="encryptionKey"></param>
+        </member>
+        <member name="T:CreepScoreAPI.ParticipantLive">
+            <summary>
+            Participant class for live games
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.bot">
+            <summary>
+            Flag indicating whether or not this participant is a bot
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.championId">
+            <summary>
+            The ID of the champion played by this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.masteries">
+            <summary>
+            The masteries used by this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.profileIconId">
+            <summary>
+            The ID of the profile icon used by this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.runes">
+            <summary>
+            The runes used by this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.spell1Id">
+            <summary>
+            The ID of the first summoner spell used by this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.spell2Id">
+            <summary>
+            The ID of the second summoner spell used by this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.summonerId">
+            <summary>
+            The summoner ID of this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.summonerName">
+            <summary>
+            The summoner name of this participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.teamIdLong">
+            <summary>
+            The team ID of this participant as a long, indicating the participant's team
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.ParticipantLive.teamId">
+            <summary>
+            The team ID of this participant, indicating the participant's team
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.ParticipantLive.#ctor(System.Boolean,System.Int64,Newtonsoft.Json.Linq.JArray,System.Int64,Newtonsoft.Json.Linq.JArray,System.Int64,System.Int64,System.Nullable{System.Int64},System.String,System.Int64)">
+            <summary>
+            Participant constructor
+            </summary>
+            <param name="bot"></param>
+            <param name="championId"></param>
+            <param name="masteriesA"></param>
+            <param name="profileIconId"></param>
+            <param name="runesA"></param>
+            <param name="spell1Id"></param>
+            <param name="spell2Id"></param>
+            <param name="summonerId"></param>
+            <param name="summonerName"></param>
+            <param name="teamId"></param>
+        </member>
+        <member name="T:CreepScoreAPI.RuneLive">
+            <summary>
+            Rune class for live games
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RuneLive.count">
+            <summary>
+            The count of this rune used by the participant
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RuneLive.runeId">
+            <summary>
+            The ID of the rune
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.RuneLive.#ctor(System.Int32,System.Int64)">
+            <summary>
+            Rune constructor
+            </summary>
+            <param name="count"></param>
+            <param name="runeId"></param>
+        </member>
+        <member name="T:CreepScoreAPI.Mastery">
+            <summary>
+            Mastery class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Mastery.id">
+            <summary>
+            Mastery id
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Mastery.rank">
+            <summary>
+            Mastery rank, how many points put into this mastery
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Mastery.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Mastery constructor
+            </summary>
+            <param name="id">Mastery id</param>
+            <param name="rank">Mastery rank</param>
+        </member>
+        <member name="T:CreepScoreAPI.MasteryPage">
+            <summary>
+            MasteryPage class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryPage.current">
+            <summary>
+            Indicates if the mastery page is the current mastery page
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryPage.id">
+            <summary>
+            Mastery page ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryPage.name">
+            <summary>
+            Mastery page name
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryPage.masteries">
+            <summary>
+            List of mastery page talents associated with the mastery page
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.MasteryPage.#ctor(System.Boolean,System.Int64,System.String,Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            MasteryPage constructor
+            </summary>
+            <param name="current">Indicates if the mastery page is the current mastery page</param>
+            <param name="name">Mastery page name</param>
+            <param name="a">JArray of mastery page talents associated with the mastery page</param>
+        </member>
+        <member name="M:CreepScoreAPI.MasteryPage.LoadMasteries(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Loads Talents list
+            </summary>
+            <param name="a">json list of talents</param>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryPages.pages">
+            <summary>
+            List of mastery pages for this player
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MasteryPages.summonerId">
+            <summary>
+            Summoner ID
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.MatchHistorySummary">
+            <summary>
+            MatchHistorySummary class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.assists">
+            <summary>
+            Number of assists
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.deaths">
+            <summary>
+            Number of deaths
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.gameId">
+            <summary>
+            Game ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.gameModeString">
+            <summary>
+            Game mode represented as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.gameMode">
+            <summary>
+            Game mode
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.invalid">
+            <summary>
+            Is invalid?
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.kills">
+            <summary>
+            Number of kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.mapId">
+            <summary>
+            Map ID as a number
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.map">
+            <summary>
+            Map
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.opposingTeamKills">
+            <summary>
+            Opposing team kills
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.opposingTeamName">
+            <summary>
+            Opposing team name
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MatchHistorySummary.win">
+            <summary>
+            If the team won or not
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.MatchHistorySummary.#ctor(System.Int32,System.Int64,System.Int32,System.Int64,System.String,System.Boolean,System.Int32,System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            MatchHistorySummary constructor
+            </summary>
+            <param name="assists">Number of assists</param>
+            <param name="dateLong">Date of match specified as epoch milliseconds</param>
+            <param name="deaths">Number of deaths</param>
+            <param name="gameId">Game ID</param>
+            <param name="gameModeString">Game mode represented as a string</param>
+            <param name="invalid">Is invalid?</param>
+            <param name="kills">Number of kills</param>
+            <param name="mapId">Map ID as a number</param>
+            <param name="opposingTeamKills">Opposing team kills</param>
+            <param name="opposingTeamName">Opposing team name</param>
+            <param name="win">If the team won or not</param>
+        </member>
+        <member name="T:CreepScoreAPI.MiniSeries">
+            <summary>
+            MiniSeries class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MiniSeries.losses">
+            <summary>
+            Number of losses
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MiniSeries.progress">
+            <summary>
+            Progress as a char array. W = win, L = loss, N = not played
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MiniSeries.target">
+            <summary>
+            Target wins needed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.MiniSeries.wins">
+            <summary>
+            Number of wins
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.MiniSeries.#ctor(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            MiniSeries constructor
+            </summary>
+            <param name="losses">Number of losses</param>
+            <param name="progress">Progress as a char array. W = win, L = loss, N = not played</param>
+            <param name="target">Target wins needed</param>
+            <param name="wins">Number of wins</param>
+        </member>
+        <member name="T:CreepScoreAPI.Player">
+            <summary>
+            Player class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Player.championId">
+            <summary>
+            Champion ID associated with player
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Player.summonerId">
+            <summary>
+            Summoner ID associated with player
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Player.teamId">
+            <summary>
+            Team ID associated with player
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Player.#ctor(System.Int32,System.Int64,System.Int32)">
+            <summary>
+            Player constructor
+            </summary>
+            <param name="championId">Champion ID associated with player</param>
+            <param name="summonerId">Summoner ID associated with player</param>
+            <param name="teamId">Team ID associated with player</param>
+        </member>
+        <member name="T:CreepScoreAPI.PlayerStatsSummary">
+            <summary>
+            PlayerStatsSummary class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.aggregatedStats">
+            <summary>
+            List of aggregated stats
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.losses">
+            <summary>
+            Number of losses for this queue type. Returned only for ranked queue types only. Always 0 for normal queues
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.modifyDateLong">
+            <summary>
+            Date stats were last modified specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.modifyDate">
+            <summary>
+            Date stats were last modified
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.playerStatSummaryTypeString">
+            <summary>
+            Player stats summary type as a string
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.playerStatSummaryType">
+            <summary>
+            Player stats summary type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummary.wins">
+            <summary>
+            Number of wins for this queue type
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.PlayerStatsSummary.#ctor(Newtonsoft.Json.Linq.JObject,System.Nullable{System.Int32},System.Int64,System.String,System.Int32)">
+            <summary>
+            PlayerStatsSummary constructor
+            </summary>
+            <param name="aggregatedStatsO">JArray of aggregated stats</param>
+            <param name="losses">Number of losses for this queue type. Returned only for ranked queue types only. Always 0 for normal queues</param>
+            <param name="modifyDateLong">Date stats were last modified specified as epoch milliseconds</param>
+            <param name="playerStatSummaryTypeString">Player stats summary type as a string</param>
+            <param name="wins">Number of wins for this queue type</param>
+            <param name="season">The season that this day represents</param>
+        </member>
+        <member name="M:CreepScoreAPI.PlayerStatsSummary.LoadAggregatedStats(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Load aggregated stats
+            </summary>
+            <param name="a">json list of aggregated stats</param>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummaryList.playerStatSummaries">
+            <summary>
+            Collection of player stats summaries for this player
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummaryList.summonerId">
+            <summary>
+            Summoner ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.PlayerStatsSummaryList.season">
+            <summary>
+            Season for the data
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.RankedStats">
+            <summary>
+            RankedStats class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RankedStats.champions">
+            <summary>
+            List of player stats summarized by champion
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RankedStats.modifyDateLong">
+            <summary>
+            Date stats were last modified specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RankedStats.modifyDate">
+            <summary>
+            Date stats were last modified
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RankedStats.summonerId">
+            <summary>
+            Summoner ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RankedStats.season">
+            <summary>
+            Season for the data
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.RankedStats.#ctor(Newtonsoft.Json.Linq.JArray,System.Int64,System.Int64,CreepScoreAPI.CreepScore.Season)">
+            <summary>
+            RankedStats constructor
+            </summary>
+            <param name="championsA">JArray of champions</param>
+            <param name="modifyDateLong">Date stats were last modified specified as epoch milliseconds</param>
+            <param name="summonerId">Summoner ID</param>
+            <param name="season">The season that represents this data</param>
+        </member>
+        <member name="M:CreepScoreAPI.RankedStats.LoadChampions(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Load champion's stats
+            </summary>
+            <param name="a">json list of champion's stats</param>
+        </member>
+        <member name="T:CreepScoreAPI.RawStats">
+            <summary>
+            RawStats class
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.RawStats.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            RawStat constructor
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RecentGames.games">
+            <summary>
+            Collection of recent games played (max 10)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RecentGames.summonerId">
+            <summary>
+            Summoner ID
+            </summary>
+        </member>
+        <member name="T:CreepScoreAPI.Roster">
+            <summary>
+            Roster class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Roster.memberList">
+            <summary>
+            List of members
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Roster.ownerId">
+            <summary>
+            Owner ID
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Roster.#ctor(Newtonsoft.Json.Linq.JArray,System.Int64)">
+            <summary>
+            Roster constructor
+            </summary>
+            <param name="memberListA">JArray of members</param>
+            <param name="ownerId">Owner ID</param>
+        </member>
+        <member name="M:CreepScoreAPI.Roster.LoadMemberList(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Loads member list
+            </summary>
+            <param name="a">json list of members</param>
+        </member>
+        <member name="T:CreepScoreAPI.RunePage">
+            <summary>
+            RunePage class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RunePage.current">
+            <summary>
+            Indicates if the page is the current page
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RunePage.id">
+            <summary>
+            Rune page ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RunePage.name">
+            <summary>
+            Rune page name
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RunePage.slots">
+            <summary>
+            List of rune slots associated with the rune page
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.RunePage.#ctor(System.Boolean,System.Int64,System.String,Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            RunePage constructor
+            </summary>
+            <param name="current">Indicates if the page is the current page</param>
+            <param name="id">Rune page ID</param>
+            <param name="name">Rune page name</param>
+            <param name="slotsA">JArray of rune slots associated with the rune page</param>
+        </member>
+        <member name="M:CreepScoreAPI.RunePage.LoadSlots(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Loads the slots list
+            </summary>
+            <param name="a">json list of rune slots associated with the rune page</param>
+        </member>
+        <member name="T:CreepScoreAPI.RuneSlot">
+            <summary>
+            RuneSlot class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RuneSlot.runeId">
+            <summary>
+            Rune ID associated with the rune slot
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RuneSlot.runeSlotId">
+            <summary>
+            Rune slot ID
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.RuneSlot.#ctor(System.Int32,System.Int32)">
+            <summary>
+            RuneSlot constructor
+            </summary>
+            <param name="runeId">Rune ID associated with the rune slot</param>
+            <param name="runeSlotId">Rune slot ID</param>
+        </member>
+        <member name="M:CreepScoreAPI.ChampionListStatic.ToString">
+            <summary>
+            Returns the JObject.ToString()
+            </summary>
+            <returns>Returns the JObject.ToString()</returns>
+        </member>
+        <member name="M:CreepScoreAPI.ItemListStatic.ToString">
+            <summary>
+            Returns the JObject.ToString()
+            </summary>
+            <returns>Returns the JObject.ToString()</returns>
+        </member>
+        <member name="M:CreepScoreAPI.MasteryListStatic.ToString">
+            <summary>
+            Returns the JObject.ToString()
+            </summary>
+            <returns>Returns the JObject.ToString()</returns>
+        </member>
+        <member name="M:CreepScoreAPI.RuneListStatic.ToString">
+            <summary>
+            Returns the JObject.ToString()
+            </summary>
+            <returns>Returns the JObject.ToString()</returns>
+        </member>
+        <member name="T:CreepScoreAPI.RealmStatic">
+            <summary>
+            Realm class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.cdn">
+            <summary>
+            The base CDN url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.css">
+            <summary>
+            The latest changed version of Dragon Magic's css file
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.dd">
+            <summary>
+            The latest changed version of Dragon Magic
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.l">
+            <summary>
+            The default language for this realm
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.lg">
+            <summary>
+            Legacy script mode for IE6 or older
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.n">
+            <summary>
+            The latest changed version for each data type listed
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.profileIconMax">
+            <summary>
+            Special behavior number identifying the largest profileicon id that can be used under 500
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.store">
+            <summary>
+            Additional api data drawn from other sources that may be related to data dragon functionality
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.RealmStatic.v">
+            <summary>
+            Current version of this file for this realm
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.RealmStatic.#ctor(System.String,System.String,System.String,System.String,System.String,Newtonsoft.Json.Linq.JObject,System.Int32,System.String,System.String)">
+            <summary>
+            Realm constructor
+            </summary>
+            <param name="cdn">The base CDN url</param>
+            <param name="css">The latest changed version of Dragon Magic's css file</param>
+            <param name="dd">The latest changed version of Dragon Magic</param>
+            <param name="l">The default language for this realm</param>
+            <param name="lg">Legacy script mode for IE6 or older</param>
+            <param name="n">The latest changed version for each data type listed</param>
+            <param name="profileIconMax">Special behavior number identifying the largest profileicon id that can be used under 500</param>
+            <param name="store">Additional api data drawn from other sources that may be related to data dragon functionality</param>
+            <param name="v">Current version of this file for this realm</param>
+        </member>
+        <member name="M:CreepScoreAPI.SummonerSpellListStatic.ToString">
+            <summary>
+            Returns the JObject.ToString()
+            </summary>
+            <returns>Returns the JObject.ToString()</returns>
+        </member>
+        <member name="T:CreepScoreAPI.Summoner">
+            <summary>
+            Summoner class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.id">
+            <summary>
+            Summoner ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.name">
+            <summary>
+            Summoner name
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.profileIconId">
+            <summary>
+            ID of the summoner icon associated with the summoner
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.revisionDateLong">
+            <summary>
+            Date the summoner was last modified specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.revisionDate">
+            <summary>
+            Date the summoner was last modified
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.summonerLevel">
+            <summary>
+            Summoner level associated with the summoner
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.isLittleSummoner">
+            <summary>
+            Flag to check if all summoner fields are loaded (not including runes, masteries, etc)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Summoner.region">
+            <summary>
+            The region this summoner was loaded in
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Summoner.#ctor(Newtonsoft.Json.Linq.JObject,CreepScoreAPI.CreepScore.Region)">
+            <summary>
+            Full summoner constructor
+            </summary>
+            <param name="summonerO">JObject representing summoner</param>
+        </member>
+        <member name="M:CreepScoreAPI.Summoner.#ctor(System.Int64,System.String,CreepScoreAPI.CreepScore.Region)">
+            <summary>
+            Little summmoner constructor
+            </summary>
+            <param name="id">Summoner ID</param>
+            <param name="name">Summoner Name</param>
+        </member>
+        <member name="T:CreepScoreAPI.Team">
+            <summary>
+            Team class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.createDateLong">
+            <summary>
+            Date when team was created specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.createDate">
+            <summary>
+            Date when team was created
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.fullId">
+            <summary>
+            Full team ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.lastGameDateLong">
+            <summary>
+            Date of last game specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.lastGameDate">
+            <summary>
+            Date of last game
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.lastJoinDateLong">
+            <summary>
+            Date when summoner last joined the team specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.lastJoinDate">
+            <summary>
+            Date when summoner last joined the team
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.lastJoinedRankedTeamQueueDateLong">
+            <summary>
+            Date when this team last joined queue specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.lastJoinedRankedTeamQueueDate">
+            <summary>
+            Date when this team last joined queue
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.matchHistory">
+            <summary>
+            List of match history summaries
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.modifyDateLong">
+            <summary>
+            Date this team was last modified specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.modifyDate">
+            <summary>
+            Date this team was last modified
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.name">
+            <summary>
+            Name of the team
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.roster">
+            <summary>
+            Team roster
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.secondLastJoinDateLong">
+            <summary>
+            Second to last summoner join date specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.secondLastJoinDate">
+            <summary>
+            Second to last summoner join date
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.status">
+            <summary>
+            Team status
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.tag">
+            <summary>
+            Team tag
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.teamStatDetails">
+            <summary>
+            Team stat details
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.thirdLastJoinDateLong">
+            <summary>
+            Third to last summoner join date specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Team.thirdLastJoinDate">
+            <summary>
+            Third to last summoner join date
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Team.#ctor(System.Int64,System.String,System.Nullable{System.Int64},System.Int64,System.Int64,Newtonsoft.Json.Linq.JArray,System.Int64,System.String,Newtonsoft.Json.Linq.JObject,System.Nullable{System.Int64},System.String,System.String,Newtonsoft.Json.Linq.JArray,System.Nullable{System.Int64})">
+            <summary>
+            Team constructor
+            </summary>
+            <param name="createDateLong">Date when team was created specified as epoch milliseconds</param>
+            <param name="lastGameDateLong">Date of last game specified as epoch milliseconds</param>
+            <param name="lastJoinDateLong">Date when summoner last joined the team specified as epoch milliseconds</param>
+            <param name="lastJoinedRankedTeamQueueDateLong">Date when this team last joined queue specified as epoch milliseconds</param>
+            <param name="matchHistoryA">JArray of match history summaries</param>
+            <param name="modifyDateLong">Date this team was last modified specified as epoch milliseconds</param>
+            <param name="name">Name of the team</param>
+            <param name="rosterO">JObject representing the team roster</param>
+            <param name="secondLastJoinDateLong">Second to last summoner join date specified as epoch milliseconds</param>
+            <param name="status">Team status</param>
+            <param name="tag">Team tag</param>
+            <param name="teamIdO">JObject representing the team ID</param>
+            <param name="teamStatDetailsA">JArray representing the team stat details</param>
+            <param name="thirdLastJoinDateLong">Third to last summoner join date specified as epoch milliseconds</param>
+        </member>
+        <member name="M:CreepScoreAPI.Team.LoadMatchHistory(Newtonsoft.Json.Linq.JArray)">
+            <summary>
+            Loads the match history
+            </summary>
+            <param name="a">json list of match history</param>
+        </member>
+        <member name="M:CreepScoreAPI.Team.LoadRoster(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Loads the roster
+            </summary>
+            <param name="o">json object representing the roster</param>
+        </member>
+        <member name="T:CreepScoreAPI.TeamMemberInfo">
+            <summary>
+            TeamMemberInfo class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamMemberInfo.inviteDateLong">
+            <summary>
+            Date invited to the team specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamMemberInfo.inviteDate">
+            <summary>
+            Date invited to the team
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamMemberInfo.joinDateLong">
+            <summary>
+            Date joined the team specified as epoch milliseconds
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamMemberInfo.joinDate">
+            <summary>
+            Date joined the team
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamMemberInfo.playerId">
+            <summary>
+            Player ID
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamMemberInfo.status">
+            <summary>
+            Player status
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.TeamMemberInfo.#ctor(System.Int64,System.Nullable{System.Int64},System.Int64,System.String)">
+            <summary>
+            TeamMemberInfo constructor
+            </summary>
+            <param name="inviteDateLong">Date invited to the team specified as epoch milliseconds</param>
+            <param name="joinDateLong">Date joined the team specified as epoch milliseconds.
+            This can be null if the player has not joined the team yet.</param>
+            <param name="playerId">Player ID</param>
+            <param name="status">Player status</param>
+        </member>
+        <member name="T:CreepScoreAPI.TeamStatDetail">
+            <summary>
+            TeamStatDetail class
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamStatDetail.averageGamesPlayed">
+            <summary>
+            Average games played
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamStatDetail.losses">
+            <summary>
+            Number of losses
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamStatDetail.teamStatType">
+            <summary>
+            Team stat type
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.TeamStatDetail.wins">
+            <summary>
+            Number of wins
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.TeamStatDetail.#ctor(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            TeamStatDetail constructor
+            </summary>
+            <param name="averageGamesPlayed">Average games played</param>
+            <param name="losses">Number of losses</param>
+            <param name="teamStatType">Team stat type</param>
+            <param name="wins">Number of wins</param>
+        </member>
+        <member name="T:CreepScoreAPI.Constants.UrlConstants">
+            <summary>
+            UrlConstants class
+            </summary>
+            <remarks>For url making stuff</remarks>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.UrlConstants.GetBaseUrl(CreepScoreAPI.CreepScore.Region)">
+            <summary>
+            Base url
+            </summary>
+            <param name="region">Region data is coming from</param>
+            <returns>Base url string</returns>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.globalBaseUrl">
+            <summary>
+            Global base URL
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.apiLolPart">
+            <summary>
+            API LoL part
+            </summary>
+            <remarks>Live games stuff doesn't use this part, Rito plz</remarks>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.observerModeRestpart">
+            <summary>
+            Observer mode rest part
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.championAPIVersion">
+            <summary>
+            Champion API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.gameAPIVersion">
+            <summary>
+            Game API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.leagueAPIVersion">
+            <summary>
+            League API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.staticDataAPIVersion">
+            <summary>
+            LoL Static Data API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.statusAPIVersion">
+            <summary>
+            LoL status API version (not actually used)
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.matchAPIVersion">
+            <summary>
+            Advanced match API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.matchHistoryAPIVersion">
+            <summary>
+            Advanced match history API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.statsAPIVersion">
+            <summary>
+            Stats API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.summonerAPIVersion">
+            <summary>
+            Summoner API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.teamAPIVersion">
+            <summary>
+            Team API version
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.championPart">
+            <summary>
+            Champion part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.freeToPlayPart">
+            <summary>
+            Free to play part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.itemPart">
+            <summary>
+            Item part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.summonerPart">
+            <summary>
+            Summoner part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.bySummonerPart">
+            <summary>
+            By summoner part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.byNamePart">
+            <summary>
+            By name part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.namePart">
+            <summary>
+            Name part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.byTeamPart">
+            <summary>
+            By team part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.apiKeyPart">
+            <summary>
+            Api key part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.andApiKeyPart">
+            <summary>
+            And api key part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.masteriesPart">
+            <summary>
+            Masteries part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.runesPart">
+            <summary>
+            Runes part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.gamePart">
+            <summary>
+            Game part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.recentPart">
+            <summary>
+            Recent part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.leaguePart">
+            <summary>
+            League part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.statsPart">
+            <summary>
+            Stats part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.summaryPart">
+            <summary>
+            Summary part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.rankedPart">
+            <summary>
+            Ranked part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.seasonPart">
+            <summary>
+            Season part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.entryPart">
+            <summary>
+            Entry part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.teamPart">
+            <summary>
+            Team part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.staticDataPart">
+            <summary>
+            Static data part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.masteryPart">
+            <summary>
+            Mastery part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.realmPart">
+            <summary>
+            Realm part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.runePart">
+            <summary>
+            Rune part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.summonerSpellPart">
+            <summary>
+            Summoner spell part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.versionsPart">
+            <summary>
+            Versions part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.matchPart">
+            <summary>
+            Match part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.matchHistoryPart">
+            <summary>
+            Match history part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.languagesPart">
+            <summary>
+            Languages part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.mapPart">
+            <summary>
+            Map part of url
+            </summary>
+        </member>
+        <member name="F:CreepScoreAPI.Constants.UrlConstants.languageStringsPart">
+            <summary>
+            Language strings part of url
+            </summary>
+        </member>
+        <member name="M:CreepScoreAPI.Constants.UrlConstants.GetRegion(CreepScoreAPI.CreepScore.Region)">
+            <summary>
+            Gets the region
+            </summary>
+            <param name="region">Region</param>
+            <returns>Returns a string representing a region</returns>
+        </member>
+    </members>
+</doc>
